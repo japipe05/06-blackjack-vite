@@ -18,7 +18,7 @@ export const turnoComputadora =(puntosminimos,puntosHTML,divCartasComputadora,de
     do {
         const carta = pedirCarta(deck);
         puntosComputadora = puntosComputadora+valorCarta(carta);
-        puntosHTML.innerHTML=puntosComputadora;
+        puntosHTML[1].innerHTML=puntosComputadora;
         //document.querySelector('small').innerHTML=puntosJugador;
 
         const imCarta = crearCartHTML(carta);
